@@ -58,9 +58,9 @@ You can download the latest APK for the app from the following link:
 
 
 ## Screenshots
-![SpaceXLaunchesList 1](https://drive.google.com/file/d/1NQa0NLZEdoe2BDU2FQRdqERvBrw_tUbA/view?usp=sharing)
-![SpaceXLaunche_Detail_1](https://drive.google.com/file/d/1vF_I3YYVQ-NnzDw2y6qYXcnp-UDd3Spc/view?usp=sharing)
-![SpaceXLaunche_Detail_1](https://drive.google.com/file/d/1KH4CLf4D_hfXVfQ3wPVSzC36aZ9irv-x/view?usp=sharing)
+![Screenshot 1](screenshots/SpaceXLaunchesList.jpg)
+![Screenshot 2](screenshots/LaunchDetail_1.jpg)
+![Screenshot 3](screenshots/LaunchDetail_2.jpg)
 
 
 ## Contribution
