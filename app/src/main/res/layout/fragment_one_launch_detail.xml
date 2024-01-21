@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/normal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:padding="@dimen/normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_launch_small"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_mission_name"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingTop="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_launch_small" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_launch_date"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_mission_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mission_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_rocket_details"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_launch_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch_date" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_rocket_name"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                app:layout_constraintStart_toStartOf="@+id/tv_rocket_details"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rocket_details" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_rocket_type"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                app:layout_constraintStart_toStartOf="@+id/tv_rocket_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name"
+                tools:text="type" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_launch_details"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_rocket_type"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rocket_type" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_launch_status"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                android:paddingBottom="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_launch_details"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch_details"
+                tools:text="Launch status" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_launch_site"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                android:paddingBottom="@dimen/normal"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tv_launch_status"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch_status"
+                tools:text="Launch site" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_launch_window"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                android:paddingBottom="@dimen/normal"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tv_launch_site"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch_site"
+                tools:text="Launch Window" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_mission_description"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                android:paddingBottom="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_launch_window"
+                app:layout_constraintTop_toBottomOf="@+id/tv_launch_window"
+                tools:text="Mission Description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_rocket_description"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/standard"
+                android:paddingEnd="@dimen/standard"
+                app:layout_constraintStart_toStartOf="@+id/tv_mission_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mission_description"
+                tools:text="description" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_links"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/normal"
+                android:paddingEnd="@dimen/normal"
+                android:paddingBottom="@dimen/normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_rocket_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rocket_description"
+                tools:text="Links" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
